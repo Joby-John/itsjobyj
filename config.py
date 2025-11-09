@@ -1,6 +1,3 @@
+import os
 
-
-
-# maintanance mode switch
-
-MAINTENANCE_MODE = True
+MAINTENANCE_MODE = os.environ.get('MAINTENANCE_MODE', 'False').lower() == True
